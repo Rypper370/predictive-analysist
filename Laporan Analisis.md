@@ -2,7 +2,9 @@
 
 ## Domain Proyek
 
-Kanker adalah kelompok penyakit yang ditandai oleh pertumbuhan sel abnormal yang tidak terkendali dan berpotensi menyebar ke bagian tubuh lainnya. Kanker dapat menyerang hampir semua organ tubuh dan merupakan salah satu penyebab utama kematian di seluruh dunia. Menurut data dari Global Cancer Observatory (GLOBOCAN) yang dirilis oleh International Agency for Research on Cancer (IARC), pada tahun 2020 terdapat lebih dari 19,3 juta kasus kanker baru dan hampir 10 juta kematian akibat kanker. Beban penyakit ini diperkirakan akan terus meningkat di tahun-tahun mendatang karena beberapa faktor seperti:
+Kanker adalah kelompok penyakit yang ditandai oleh pertumbuhan sel abnormal yang tidak terkendali dan berpotensi menyebar ke bagian tubuh lainnya. Kanker dapat menyerang hampir semua organ tubuh dan merupakan salah satu penyebab utama kematian di seluruh dunia ([World Health Organization, 2022](https://www.who.int/news-room/fact-sheets/detail/cancer)). 
+
+Menurut data dari Global Cancer Observatory ([GLOBOCAN](https://doi.org/10.3322/caac.21660)) yang dirilis oleh International Agency for Research on Cancer (IARC), pada tahun 2020 terdapat lebih dari 19,3 juta kasus kanker baru dan hampir 10 juta kematian akibat kanker. Beban penyakit ini diperkirakan akan terus meningkat di tahun-tahun mendatang karena beberapa faktor seperti:
     - Pertumbuhan dan penuaan populasi.
     - Gaya hidup tidak sehat seperti konsumsi tembakau, alkohol, diet tinggi lemak dan rendah serat.
     - Kurangnya deteksi dini dan akses layanan kesehatan yang memadai.
@@ -19,49 +21,78 @@ Oleh karena itu, kemampuan untuk memprediksi jumlah pasien kanker di masa depan 
 - Sung, H., et al. (2021). Global cancer statistics 2020: GLOBOCAN estimates of incidence and mortality worldwide. CA: A Cancer Journal for Clinicians, 71(3), 209-249. https://doi.org/10.3322/caac.21660
 - World Health Organization. (2022). Cancer. https://www.who.int/news-room/fact-sheets/detail/cancer
 
-
-
 ## Business Understanding
 
-Pada bagian ini, kamu perlu menjelaskan proses klarifikasi masalah.
-
-Bagian laporan ini mencakup:
+Dalam beberapa dekade terakhir, kanker telah menjadi salah satu beban kesehatan global terbesar, tidak hanya karena angka kasus dan kematian yang tinggi, tetapi juga karena dampaknya yang signifikan terhadap sistem layanan kesehatan dan ekonomi nasional. Organisasi Kesehatan Dunia (WHO) mencatat bahwa kanker menjadi penyebab utama kematian secara global, dan tren ini menunjukkan peningkatan dari tahun ke tahun.
+Data historis jumlah pasien kanker secara global dapat digunakan untuk memahami pola dan tren penyakit ini. Analisis tersebut sangat penting untuk membantu pengambil kebijakan dan penyedia layanan kesehatan dalam:
+    - Menentukan strategi penanggulangan kanker.
+    - Mengalokasikan anggaran dan sumber daya dengan lebih tepat.
+    - Merancang program pencegahan dan skrining dini.
+Dengan menggunakan pendekatan machine learning, kita dapat membangun model prediksi yang mampu memperkirakan jumlah pasien kanker di masa depan, yang pada gilirannya dapat mendukung keputusan strategis dalam sistem kesehatan global.
 
 ### Problem Statements
-
-Menjelaskan pernyataan masalah latar belakang:
-- Pernyataan Masalah 1
-- Pernyataan Masalah 2
-- Pernyataan Masalah n
+Proyek ini mengangkat sejumlah permasalahan penting yang berkaitan dengan karakteristik pasien kanker berdasarkan data historis global. Berikut adalah tinjauan terhadap masing-masing permasalahan berdasarkan konteks dan potensi eksplorasi data:
+- **Distribusi pasien berdasarkan negara**, Meskipun data yang digunakan dalam notebook saat ini bersifat global secara agregat, analisis distribusi berdasarkan negara akan menjadi penting jika tersedia data granular per wilayah. Ini akan membantu mengidentifikasi negara dengan beban kanker tertinggi serta mendukung strategi alokasi sumber daya medis secara geografis.
+- **Distribusi pasien berdasarkan jenis kelamin**, Penelitian epidemiologi menunjukkan bahwa prevalensi kanker sering berbeda antara pria dan wanita, tergantung jenis kankernya. Analisis ini akan memberikan wawasan apakah ada kecenderungan gender tertentu terhadap kanker tertentu, yang dapat membantu dalam kampanye kesadaran dan skrining berbasis gender.
+- **Hubungan antara Tingkat Risiko Genetik dan Jenis Kanker**, Banyak jenis kanker seperti kanker payudara, ovarium, dan prostat memiliki komponen genetik yang signifikan. Dengan menganalisis keterkaitan antara faktor genetik dan jenis kanker, kita dapat mendukung pengembangan kebijakan deteksi dini dan pengujian genetik secara lebih terarah.
+- **Distribusi Usia Berdasarkan Stadium Kanker**, Stadium kanker saat diagnosis sangat menentukan prognosis. Mengamati pola usia di tiap stadium dapat memberikan informasi penting mengenai kelompok usia yang cenderung terdiagnosis lebih lambat atau lebih awal, serta potensi untuk intervensi dini.
+- **Pengaruh Biaya Pengobatan terhadap Peluang Bertahan Hidup**, Akses terhadap pengobatan kanker berkualitas sangat bergantung pada biaya. Menganalisis korelasi antara pengeluaran medis dan survival rate pasien penting untuk menyusun strategi perlindungan kesehatan, subsidi, serta mengurangi ketimpangan dalam penanganan kanker.
 
 ### Goals
 
-Menjelaskan tujuan dari pernyataan masalah:
-- Jawaban pernyataan masalah 1
-- Jawaban pernyataan masalah 2
-- Jawaban pernyataan masalah n
+- **Untuk mengetahui distribusi pasien kanker berdasarkan negara**, diperlukan analisis statistik dan visualisasi geospasial guna mengidentifikasi negara-negara dengan beban kanker tertinggi, sehingga dapat membantu dalam perencanaan alokasi sumber daya medis secara regional.
+- **Untuk memahami distribusi pasien berdasarkan jenis kelamin**, dilakukan analisis segmentasi dan perbandingan jumlah kasus antara pria dan wanita untuk mendeteksi potensi perbedaan signifikan yang dapat digunakan dalam perancangan program pencegahan dan skrining berbasis gender.
+- **Untuk mengkaji hubungan antara tingkat risiko genetik dan jenis kanker**, diperlukan pemodelan statistik atau machine learning yang dapat mengidentifikasi korelasi atau hubungan sebab-akibat antara faktor genetik dan jenis kanker yang muncul, sebagai dasar bagi rekomendasi pengujian genetik dini.
+- **Untuk mengevaluasi distribusi usia berdasarkan stadium kanker**, dilakukan eksplorasi data dengan visualisasi dan uji statistik untuk mengetahui kecenderungan usia pasien di setiap stadium kanker, yang dapat mendukung strategi deteksi dini dan intervensi usia spesifik.
+- **Untuk menganalisis pengaruh biaya pengobatan terhadap peluang bertahan hidup**, dilakukan pemodelan regresi atau analisis survival untuk mengevaluasi sejauh mana investasi dalam pengobatan berdampak terhadap hasil klinis pasien, dengan potensi rekomendasi kebijakan pembiayaan yang lebih adil dan efektif.
 
-Semua poin di atas harus diuraikan dengan jelas. Anda bebas menuliskan berapa pernyataan masalah dan juga goals yang diinginkan.
+### Solution statements
+- **Eksperimen Multimodel Regresi**, Beberapa algoritma regresi seperti ElasticNet, SVR, KNeighborsRegressor, DecisionTreeRegressor, RandomForestRegressor, dan GradientBoostingRegressor diuji untuk memprediksi jumlah pasien kanker berdasarkan tahun. Setiap model dibandingkan menggunakan metrik R², MAE, MSE, dan RMSE. Hasil evaluasi menunjukkan bahwa Random Forest dan Gradient Boosting memberikan performa terbaik.
+- **Mengukur performa model regresi**, dengan menggunakan beberapa metrik seperti MSE, MAE, R2 dan RMSE untuk mengevaluasi kinerja model dalam memprediksi jumlah pasien kanker di masa depan.
 
-**Rubrik/Kriteria Tambahan (Opsional)**:
-- Menambahkan bagian “Solution Statement” yang menguraikan cara untuk meraih goals. Bagian ini dibuat dengan ketentuan sebagai berikut: 
-
-    ### Solution statements
-    - Mengajukan 2 atau lebih solution statement. Misalnya, menggunakan dua atau lebih algoritma untuk mencapai solusi yang diinginkan atau melakukan improvement pada baseline model dengan hyperparameter tuning.
-    - Solusi yang diberikan harus dapat terukur dengan metrik evaluasi.
 
 ## Data Understanding
-Paragraf awal bagian ini menjelaskan informasi mengenai data yang Anda gunakan dalam proyek. Sertakan juga sumber atau tautan untuk mengunduh dataset. Contoh: [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/Restaurant+%26+consumer+data).
+Dataset yang digunakan dalam analisis ini bernama  [Global Cancer Patients](https://www.kaggle.com/datasets/zahidmughal2343/global-cancer-patients-2015-2024) berisi informasi terkait kanker, yang mencakup berbagai fitur diagnostik yang membantu dalam menentukan apakah suatu kasus bersifat jinak atau ganas.
 
-Selanjutnya uraikanlah seluruh variabel atau fitur pada data. Sebagai contoh:  
+### Informasi Dataset
+Dataset ini berisi informasi mengenai 50.000 pasien kanker dari berbagai negara pada rentang tahun 2015 hingga 2024. Masing-masing baris dalam dataset mewakili satu individu pasien, lengkap dengan data demografis, faktor risiko, jenis kanker yang diderita, serta hasil pengobatan. Total terdapat 15 kolom atau fitur dalam dataset ini. Variabel target dalam dataset adalah `Target_Severity_Score`, yang menunjukkan tingkat keparahan kondisi pasien berdasarkan parameter yang telah ditentukan.
 
-### Variabel-variabel pada Restaurant UCI dataset adalah sebagai berikut:
-- accepts : merupakan jenis pembayaran yang diterima pada restoran tertentu.
-- cuisine : merupakan jenis masakan yang disajikan pada restoran.
-- dst
+Fitur - Fitur yang terdapat pada dataset ini yaitu:
+    
+- **Patient_ID** = ID unik untuk mengidentifikasi setiap pasien secara individual.         
+- **Age** = Usia pasien saat data dikumpulkan.                 
+- **Gender** = Jenis kelamin pasien (contoh: Male, Female, Other).                 
+- **Country_Region** = Negara atau wilayah asal pasien.          
+- **Year** = Tahun data dicatat (antara 2015–2024).                     
+- **Genetic_Risk** = Skor atau tingkat risiko genetik terhadap kanker (numerik).           
+- **Air_Pollution** = Tingkat paparan terhadap polusi udara di lingkungan tempat tinggal pasien (numerik).          
+- **Alcohol_Use** = Tingkat konsumsi alkohol pasien (numerik).           
+- **Smoking** = Status atau tingkat merokok pasie(numerik).                
+- **Obesity_Level** = Tingkat obesitas pasien (nilai BMI).          
+- **Cancer_Type** = Jenis kanker yang diderita pasien (contoh: Breast, Lung, Colon, leukimia, cervical, prostate, liver dan skin).            
+- **Cancer_Stage** = Stadium kanker saat diagnosis (contoh: Stage I, II, III, IV).            
+- **Treatment_Cost_USD** = Total biaya pengobatan pasien dalam mata uang USD.   
+- **Survival_Years** = Lama waktu bertahan hidup pasien setelah diagnosis (numerik).         
+- **Target_Severity_Score** = Skor tingkat keparahan kondisi pasien.  
+   
 
-**Rubrik/Kriteria Tambahan (Opsional)**:
-- Melakukan beberapa tahapan yang diperlukan untuk memahami data, contohnya teknik visualisasi data atau exploratory data analysis.
+### Tahapan Pemahaman Data
+Untuk memahami data perlu dilakukan beberapa hal seperti berikut:
+    - Memahami distribusi umum dari variabel numerik serta Frekuensi dan proporsi untuk variabel kategorikal.
+    - Pemeriksaan Nilai Hilang dan Duplikat untuk mengetahui kualitas data.
+    - Melakukan eksplorasi korelasi fitur numerik.
+    - Analisis Eksploratif terhadap Pola, Distribusi, dan Hubungan Antarfaktor Kanker
+        - Distribusi kolom numerik
+        - Distribusi pasien berdasarkan negara
+        - Distribusi pasien berdasarkan jenis kelamin
+        - Hubungan antara Tingkat Risiko Genetik dan Jenis Kanker
+        - Distribusi Usia Berdasarkan Stadium Kanker
+        - Pengaruh Biaya Pengobatan terhadap Peluang Bertahan Hidup
+    - Mengecek adanya outliers pada data
+
+
+
+
 
 ## Data Preparation
 Pada bagian ini Anda menerapkan dan menyebutkan teknik data preparation yang dilakukan. Teknik yang digunakan pada notebook dan laporan harus berurutan.
