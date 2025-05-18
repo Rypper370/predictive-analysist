@@ -1,14 +1,25 @@
-# Laporan Proyek Machine Learning - Nama Anda
+# Laporan Proyek Machine Learning - Yohanes Aldo Anantha
 
 ## Domain Proyek
 
-Pada bagian ini, kamu perlu menuliskan latar belakang yang relevan dengan proyek yang diangkat.
+Kanker adalah kelompok penyakit yang ditandai oleh pertumbuhan sel abnormal yang tidak terkendali dan berpotensi menyebar ke bagian tubuh lainnya. Kanker dapat menyerang hampir semua organ tubuh dan merupakan salah satu penyebab utama kematian di seluruh dunia. Menurut data dari Global Cancer Observatory (GLOBOCAN) yang dirilis oleh International Agency for Research on Cancer (IARC), pada tahun 2020 terdapat lebih dari 19,3 juta kasus kanker baru dan hampir 10 juta kematian akibat kanker. Beban penyakit ini diperkirakan akan terus meningkat di tahun-tahun mendatang karena beberapa faktor seperti:
+    - Pertumbuhan dan penuaan populasi.
+    - Gaya hidup tidak sehat seperti konsumsi tembakau, alkohol, diet tinggi lemak dan rendah serat.
+    - Kurangnya deteksi dini dan akses layanan kesehatan yang memadai.
+    - Paparan terhadap lingkungan dan zat karsinogenik.
 
-**Rubrik/Kriteria Tambahan (Opsional)**:
-- Jelaskan mengapa dan bagaimana masalah tersebut harus diselesaikan
-- Menyertakan hasil riset terkait atau referensi. Referensi yang diberikan harus berasal dari sumber yang kredibel dan author yang jelas.
-- Format Referensi dapat mengacu pada penulisan sitasi [IEEE](https://journals.ieeeauthorcenter.ieee.org/wp-content/uploads/sites/7/IEEE_Reference_Guide.pdf), [APA](https://www.mendeley.com/guides/apa-citation-guide/) atau secara umum seperti [di sini](https://penerbitdeepublish.com/menulis-buku-membuat-sitasi-dengan-mudah/)
-- Sumber yang bisa digunakan [Scholar](https://scholar.google.com/)
+Peningkatan jumlah pasien kanker bukan hanya menjadi tantangan medis, tetapi juga menimbulkan tekanan besar pada sistem kesehatan dan ekonomi negara. Pemerintah, penyedia layanan kesehatan, dan organisasi non-pemerintah memerlukan pendekatan berbasis data untuk:
+    - Mengantisipasi kebutuhan layanan medis (seperti rumah sakit, obat, tenaga kerja medis).
+    - Menyusun kebijakan pengendalian kanker yang lebih efisien.
+    - Mengelola pembiayaan jangka panjang dan asuransi kesehatan.
+
+Oleh karena itu, kemampuan untuk memprediksi jumlah pasien kanker di masa depan sangat penting. Proyek ini hadir dengan pendekatan machine learning berbasis data historis jumlah pasien kanker global dari tahun 2015 hingga 2024. Model prediksi yang dikembangkan dapat digunakan sebagai alat bantu dalam pengambilan keputusan strategis oleh lembaga kesehatan, pemerintah, maupun sektor industri farmasi.
+
+### Referensi 
+- Sung, H., et al. (2021). Global cancer statistics 2020: GLOBOCAN estimates of incidence and mortality worldwide. CA: A Cancer Journal for Clinicians, 71(3), 209-249. https://doi.org/10.3322/caac.21660
+- World Health Organization. (2022). Cancer. https://www.who.int/news-room/fact-sheets/detail/cancer
+
+
 
 ## Business Understanding
 
