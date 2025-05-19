@@ -78,17 +78,18 @@ Fitur - Fitur yang terdapat pada dataset ini yaitu:
 
 ### Tahapan Pemahaman Data
 Untuk memahami data perlu dilakukan beberapa hal seperti berikut:
-    - Memahami distribusi umum dari variabel numerik serta Frekuensi dan proporsi untuk variabel kategorikal.
-    - Pemeriksaan Nilai Hilang dan Duplikat untuk mengetahui kualitas data.
-    - Melakukan eksplorasi korelasi fitur numerik.
-    - Analisis Eksploratif terhadap Pola, Distribusi, dan Hubungan Antarfaktor Kanker
-        - Distribusi kolom numerik
-        - Distribusi pasien berdasarkan negara
-        - Distribusi pasien berdasarkan jenis kelamin
-        - Hubungan antara Tingkat Risiko Genetik dan Jenis Kanker
-        - Distribusi Usia Berdasarkan Stadium Kanker
-        - Pengaruh Biaya Pengobatan terhadap Peluang Bertahan Hidup
-    - Mengecek adanya outliers pada data
+- Memahami distribusi umum dari variabel numerik serta Frekuensi dan proporsi untuk variabel kategorikal.
+- Pemeriksaan Nilai Hilang dan Duplikat untuk mengetahui kualitas data.
+- Melakukan eksplorasi korelasi fitur numerik.
+- Analisis Eksploratif terhadap Pola, Distribusi, dan Hubungan Antarfaktor Kanker
+  - Distribusi kolom numerik
+  - Distribusi pasien berdasarkan negara
+  - Distribusi pasien berdasarkan jenis kelamin
+  - Hubungan antara Tingkat Risiko Genetik dan Jenis Kanker
+  - Distribusi Usia Berdasarkan Stadium Kanker
+  - Pengaruh Biaya Pengobatan terhadap Peluang Bertahan Hidup
+- Mengecek adanya outliers pada data
+
 
 
 
