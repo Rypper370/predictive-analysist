@@ -206,7 +206,7 @@ for i, column in enumerate(numerical_cols, 1):
 plt.tight_layout()
 plt.show()
 ```
-![alt text](image.png)
+![image](https://github.com/user-attachments/assets/52600de8-8b5a-4228-a6ab-1bf5a02e3cd6)
 Berdasarkan hasil visualisasi diatas menunjukkan informasi sebagai berikut:
 - **Distribusi Age**: Grafik menunjukkan distribusi usia pasien kanker yang relatif merata dari **20-90** tahun dengan sedikit peningkatan pada kelompok **usia produktif (30-70 tahun)**. Pola ini mencerminkan representasi komprehensif berbagai kelompok usia, memungkinkan analisis mendalam tentang onset kanker pada berbagai tahap kehidupan dan pengaruh faktor usia terhadap respon pengobatan.
 - **Distribusi Year**: Data dikumpulkan secara konsisten selama periode **2015-2024** dengan jumlah sampel yang relatif setara setiap tahunnya, meskipun terdapat **fluktuasi minor**. Keseimbangan temporal ini memungkinkan analisis tren longitudinal yang valid, termasuk perkembangan metode pengobatan dan perubahan pola diagnostik kanker dalam satu dekade terakhir.
@@ -220,23 +220,28 @@ Berdasarkan hasil visualisasi diatas menunjukkan informasi sebagai berikut:
 - **Distribusi Target_Severity_Score**: Berbeda dengan fitur lain, skor keparahan menunjukkan distribusi normal yang terpusat di sekitar nilai **4-6**, dengan puncak pada **5**. Pola unik ini mengindikasikan bahwa mayoritas kasus memiliki tingkat keparahan menengah, sementara kasus ringan dan parah lebih jarang, mencerminkan pola alami distribusi keparahan kanker dalam populasi klinis.
 
 #### Distribusi pasien berdasarkan negara
-![alt text](image-1.png)
+![image](https://github.com/user-attachments/assets/136fe610-f44d-4b71-9fb4-c0e1daaadf7c)
+
 Berdasarkan barplot diatas menunjukkan distribusi pasien kanker yang sangat seimbang di 10 negara, dengan rentang sempit antara **9,73% (Kanada)** hingga **10,18% (Australia)**, mengindikasikan desain sampling yang disengaja untuk menghindari bias geografis. Keseimbangan proporsi antara **negara maju (Australia, UK, USA)** dan **berkembang (India, Pakistan)** memungkinkan analisis perbandingan yang valid terkait faktor lingkungan dan akses layanan kesehatan yang memengaruhi perkembangan kanker. Pola distribusi yang hampir identik ini sangat berharga untuk studi global tentang disparitas kesehatan, efektivitas berbagai sistem perawatan kesehatan, dan pengaruh faktor sosio-ekonomi terhadap hasil pengobatan kanker tanpa harus mengkompensasi ketidakseimbangan jumlah sampel.
 
 #### Distribusi Pasien Berdasarkan Jenis Kelamin
-![alt text](image-2.png)
+![image](https://github.com/user-attachments/assets/3e81b8bb-f0d9-4281-8f61-356582a432d5)
+
 Berdasarkan diagram pie yang ditampilkan distribusi pasien kanker yang luar biasa seimbang antara tiga kategori gender: **Male (33,6%)**, **Female (33,4%)**, dan **Other (33,0%)**. Keseimbangan yang hampir sempurna ini jelas merupakan hasil desain sampling yang disengaja untuk menghilangkan bias gender dalam penelitian, yang sangat berbeda dari distribusi kasus kanker di populasi umum dimana proporsi biasanya bervariasi signifikan berdasarkan gender. Inklusi kategori **"Other"** dengan proporsi hampir setara dengan kategori tradisional menunjukkan pendekatan penelitian yang sangat inklusif dan progresif, memungkinkan analisis yang komprehensif tentang bagaimana kanker mempengaruhi spektrum gender yang lebih luas. Keseimbangan ini memberikan kekuatan statistik yang optimal untuk membandingkan faktor risiko, respons pengobatan, dan hasil klinis lintas gender tanpa bias sampling, sekaligus memungkinkan penelitian tentang kanker spesifik gender (seperti prostat, serviks, dan payudara) serta variasi dalam manifestasi kanker yang sama pada gender berbeda, menciptakan dataset yang secara metodologis kuat untuk analisis disparitas kesehatan berbasis gender.
 
 #### Distribusi Usia Berdasarkan Stadium Kanker
-![alt text](image-3.png)
+![image](https://github.com/user-attachments/assets/212574eb-c16c-4493-ac2d-9058bb785296)
+
 Berdasarkan grafik ini, menampilkan rata-rata usia pasien berdasarkan stadium kanker. Dari visualisasi bar chart tersebut, terlihat bahwa usia rata-rata pasien relatif konsisten di semua stadium kanker, berada pada kisaran sekitar 55 tahun.Jika dilihat lebih detail, pasien dengan Stage III memiliki rata-rata usia sedikit lebih tinggi, diikuti oleh Stage 0, Stage II, Stage I, dan terakhir Stage IV. Namun, perbedaan antar stadium tidak signifikan, dengan selisih yang sangat kecil. Hal ini menunjukkan bahwa kanker dapat menyerang pada usia yang relatif sama terlepas dari stadiumnya.Informasi ini dapat memiliki implikasi penting untuk pemahaman epidemiologi kanker, menunjukkan bahwa faktor usia mungkin tidak menjadi prediktor yang kuat untuk stadium kanker yang didiagnosis. Hal ini berbeda dengan asumsi umum bahwa pasien yang lebih tua mungkin terdiagnosis pada stadium yang lebih lanjut. Temuan ini dapat membantu praktisi medis dalam memahami bahwa skrining dan diagnosis dini perlu dilakukan pada semua kelompok usia dewasa.
 
 #### Hubungan antara Tingkat Risiko Genetik dan Jenis Kanker
-![alt text](image-4.png)
+![image](https://github.com/user-attachments/assets/5eefdade-d5e2-4c19-aa73-91625fbce52d)
+
 Berdasarkan grafik ini menunjukkan bahwa risiko genetik berperan besar dalam semua jenis kanker yang ditampilkan, termasuk paru-paru, leukemia, payudara, usus besar, kulit, serviks, prostat, dan hati. Nilai risiko genetik hampir mencapai angka 5 pada skala, menandakan faktor keturunan sangat memengaruhi kemungkinan seseorang terkena kanker. Tidak ada perbedaan signifikan antar jenis kanker dalam hal risiko genetik, yang menguatkan pentingnya riwayat keluarga dalam deteksi dan pencegahan. Oleh karena itu, pemeriksaan rutin bagi individu dengan riwayat keluarga kanker sangat dianjurkan, serta pertimbangan faktor genetik dalam diagnosis dan perencanaan pengobatan oleh dokter.
 
 #### Pengaruh Biaya Pengobatan terhadap Peluang Bertahan Hidup
-![alt text](image-5.png)
+![image](https://github.com/user-attachments/assets/b3fde86a-d0a5-403a-88b1-797391352907)
+
 Visualisasi tren ini menunjukkan hubungan antara biaya pengobatan kanker dan rata-rata tahun bertahan hidup pasien, dengan pola yang **fluktuatif dan tidak linear**. Rata-rata harapan hidup cukup tinggi (**5,05 tahun**) pada biaya rendah (**10.000 USD**), kemudian menurun hingga titik terendah (**4,93 tahun**) pada **60.000 USD**, sebelum meningkat ke **5,09 tahun** pada **80.000 USD**, lalu kembali turun (**4,96 tahun**) pada **90.000 USD**.
 
 Analisis data ini menunjukkan beberapa hal penting:
@@ -248,11 +253,13 @@ Analisis data ini menunjukkan beberapa hal penting:
 Temuan ini penting bagi kebijakan kesehatan, menunjukkan bahwa **pengobatan paling mahal tidak selalu paling efektif**. Fokus pada **deteksi dini dan strategi pengobatan yang tepat** dapat lebih bermanfaat daripada sekadar meningkatkan biaya perawatan. Analisis biaya-manfaat dalam perencanaan terapi kanker menjadi krusial untuk **mengoptimalkan sumber daya kesehatan dan hasil klinis pasien**.
 
 #### Korelasi data
-![alt text](image-6.png)
+![image](https://github.com/user-attachments/assets/0cff60f3-3632-41ce-82eb-a0dd53e3e13c)
+
 Matriks korelasi ini menunjukkan hubungan antara berbagai faktor risiko kanker dan tingkat keparahannya, dengan warna merah menandakan korelasi positif kuat dan biru korelasi negatif. Temuan paling signifikan terlihat pada hubungan antara **Target_Severity_Score** dengan **Genetic_Risk (0,48)** dan **Smoking (0,48)**, diikuti oleh **Air_Pollution (0,37)** dan **Alcohol_Use (0,36)**, menunjukkan faktor genetik dan merokok memiliki pengaruh terbesar terhadap keparahan kanker. Menariknya, terdapat korelasi **negatif** yang cukup kuat **(-0,47)** antara **Treatment_Cost_USD** dengan **Target_Severity_Score**, mengindikasikan bahwa biaya pengobatan tinggi justru berhubungan dengan skor keparahan yang lebih rendah, mungkin mencerminkan efektivitas pengobatan mahal atau intervensi dini pada kasus serius. Korelasi antar faktor risiko sendiri **sangat rendah (mendekati 0)**, menunjukkan bahwa faktor-faktor risiko tersebut bersifat independen dan berkontribusi secara terpisah terhadap keparahan kanker.
 
 #### Mengecek Outliers
-![alt text](image-7.png)
+![image](https://github.com/user-attachments/assets/7fa930e8-6d44-4636-bdea-f5e09717bd00)
+
 Berdasarkan boxplot diatas ini menampilkan berbagai variabel terkait faktor risiko kanker, di mana mayoritas variabel menunjukkan distribusi yang cukup seimbang tanpa outlier signifikan. Khususnya pada boxplot **Target_Severity_Score** terlihat beberapa outlier di kedua sisi **(nilai rendah dan tinggi)** yang menunjukkan kasus-kasus dengan skor keparahan yang jauh berbeda dari kebanyakan populasi. Mempertahankan outlier pada **Target_Severity_Score** merupakan keputusan yang tepat karena data tersebut mungkin merepresentasikan kasus-kasus penting dengan karakteristik unik yang dapat meningkatkan kemampuan model untuk mengenali pola pada situasi ekstrem. Variabel lain seperti **Age (rentang 40-80 tahun)**, **Genetic_Risk**, **Smoking**, dan **Treatment_Cost_USD** memiliki distribusi yang relatif seragam, menunjukkan kualitas data yang baik untuk pemodelan. Menariknya, **Survival_Years** juga memiliki distribusi yang cukup lebar, dengan median sekitar **4 tahun**, yang mengindikasikan variasi harapan hidup pasien kanker dalam dataset ini.
 
 ## Data Preparation
