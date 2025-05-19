@@ -529,7 +529,7 @@ def predict_cancer_type(data):
     smoking = data[3]
     obesity_level = data[4]
 
-    # Normalisasi umur untuk perhitungan ini (opsional)
+    # Normalisasi umur untuk perhitungan ini 
     normalized_age = min(10, age/10)  # Batasi maksimal 10 untuk keseragaman
 
     cancer_scores = {
