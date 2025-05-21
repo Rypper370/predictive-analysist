@@ -444,7 +444,8 @@ for i, metric in enumerate(metrics):
 plt.tight_layout() # Menyesuaikan layout agar tidak tumpang tindih
 plt.show()
 ```
-![alt text](image-8.png)
+![image](https://github.com/user-attachments/assets/4bd98964-f7fb-4b13-9700-f24e2dd1e527)
+
 
  Berikut adalah evaluasiuntuk masing-masing model regresi yang digunakan dalam melatih model untuk memprediksi variabel **Target_Severity_Score**:
 
